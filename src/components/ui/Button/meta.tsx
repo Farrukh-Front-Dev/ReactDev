@@ -1,14 +1,41 @@
 import React from "react";
-import Button from "./Button";
-import { buttonCode } from "./buttonCode";
+import { NeoGlassButton } from "./NeoglassButton";
+import { neoglassButtonCode } from "./neoglassButtonCode";
 import { buttonUsage } from "./usage";
-import { buttonInstall } from "./install";
+import { neoGlassButtonInstall } from "./install";
+import { Download, ArrowRight, Trash2 } from "lucide-react";
 
 export const meta = {
   id: "button",
   name: "Button",
-  element: <Button>Click me</Button>,
-  code: buttonCode,
+  element: (
+    <div className="flex space-x-4">
+      <NeoGlassButton 
+        variant="primary" 
+        size="md" 
+        leftIcon={<Download />}
+      >
+        Download
+      </NeoGlassButton>
+
+      <NeoGlassButton 
+        variant="secondary" 
+        size="lg" 
+        rightIcon={<ArrowRight />}
+      >
+        Continue
+      </NeoGlassButton>
+
+      <NeoGlassButton 
+        variant="danger" 
+        size="sm" 
+        loading
+      >
+        Deleting...
+      </NeoGlassButton>
+    </div>
+  ),
+  code: neoglassButtonCode,
   usage: buttonUsage,
-  install: buttonInstall,
+  install: neoGlassButtonInstall,
 };

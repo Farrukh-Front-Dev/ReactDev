@@ -1,27 +1,38 @@
 export const buttonUsage =`import React from 'react';
-import FuturisticCarousel from './FuturisticCarousel';
+import { NeoGlassButton } from './components/NeoGlassButton';
+import { Download, ArrowRight, Trash2 } from 'lucide-react';
 
-const App = () => {
-  const carouselItems = [
-    { color: '#06b6d4', id: 'product1', data: { name: 'AI Assistant', price: '$99' } },
-    { color: '#8b5cf6', id: 'product2', data: { name: 'VR Headset', price: '$599' } },
-    { color: '#ec4899', id: 'product3', data: { name: 'Smart Watch', price: '$299' } },
-    { color: '#10b981', id: 'product4', data: { name: 'Drone', price: '$799' } },
-  ];
-
-  const handleSelection = (index: number, item: any) => {
-    console.log('User selected:', item.data.name);
-    // Add your custom logic here
+const App: React.FC = () => {
+  const handleClick = () => {
+    console.log('Button clicked!');
   };
 
   return (
-    <div className="App">
-      <FuturisticCarousel 
-        items={carouselItems}
-        onItemSelect={handleSelection}
-      />
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-purple-900 flex items-center justify-center space-x-4">
+      <NeoGlassButton 
+        variant="primary" 
+        size="md" 
+        leftIcon={<Download />}
+        onClick={handleClick}
+      >
+        Download
+      </NeoGlassButton>
+      
+      <NeoGlassButton 
+        variant="secondary" 
+        size="lg" 
+        rightIcon={<ArrowRight />}
+      >
+        Continue
+      </NeoGlassButton>
+      
+      <NeoGlassButton 
+        variant="danger" 
+        size="sm"
+        loading={true}
+      >
+        Deleting...
+      </NeoGlassButton>
     </div>
   );
-};
-
-export default App;`;
+};`;

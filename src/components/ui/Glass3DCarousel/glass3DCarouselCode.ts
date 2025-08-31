@@ -1,4 +1,4 @@
-export const Glass3DCarouselCode = `import React, { useState, useEffect, useRef } from 'react';
+export const glass3DCarouselCode = `import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 
 interface Card {

@@ -1,2 +1,1 @@
-export const buttonInstall = `npm install @react-three/fiber @react-three/drei three
-npm install @types/three  # For TypeScript support`;
+export const neoGlassButtonInstall = `npm install react @types/react lucide-react`;

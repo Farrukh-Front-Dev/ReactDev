@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Button from "@/components/ui/Button/Button";
+import {NeoGlassButton} from "@/components/ui/Button/NeoglassButton";
 import { Check, Copy } from "lucide-react";
 
 type ComponentPreviewProps = {
@@ -47,13 +47,13 @@ export default function ComponentPreview({
           <pre className="bg-gray-900 text-gray-100 rounded-xl p-4 overflow-x-auto text-sm">
             <code>{install}</code>
           </pre>
-          <Button
+          <NeoGlassButton
             onClick={() => handleCopy(install, "install")}
             className="absolute top-2 right-2 flex items-center gap-2 px-3 py-1 text-sm"
           >
             {copied === "install" ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
             {copied === "install" ? "Copied!" : "Copy"}
-          </Button>
+          </NeoGlassButton>
         </div>
       )}
 
@@ -64,13 +64,13 @@ export default function ComponentPreview({
           <pre className="bg-gray-900 text-gray-100 rounded-xl p-4 overflow-x-auto text-sm">
             <code>{usage}</code>
           </pre>
-          <Button
+          <NeoGlassButton
             onClick={() => handleCopy(usage, "usage")}
             className="absolute top-2 right-2 flex items-center gap-2 px-3 py-1 text-sm"
           >
             {copied === "usage" ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
             {copied === "usage" ? "Copied!" : "Copy"}
-          </Button>
+          </NeoGlassButton>
         </div>
       )}
 
@@ -80,13 +80,13 @@ export default function ComponentPreview({
         <pre className="bg-gray-900 text-green-400 rounded-xl p-4 overflow-x-auto text-sm">
           <code>{code}</code>
         </pre>
-        <Button
+        <NeoGlassButton
           onClick={() => handleCopy(code, "code")}
           className="absolute top-2 right-2 flex items-center gap-2 px-3 py-1 text-sm"
         >
           {copied === "code" ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
           {copied === "code" ? "Copied!" : "Copy"}
-        </Button>
+        </NeoGlassButton>
       </div>
     </div>
   );

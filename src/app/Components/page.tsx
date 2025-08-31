@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import { componentsList } from "@/lib/componentsList";
-import Button from "@/components/ui/Button/Button";
+import {NeoGlassButton} from "@/components/ui/Button/NeoglassButton";
 import { Eye, Code } from "lucide-react";
 import ComponentPreview from "@/components/componentPreview";
 
@@ -73,7 +73,7 @@ export default function MainContent() {
           {/* Toggle buttons */}
           <div className="flex gap-2 mt-2">
             {/* Preview toggle */}
-            <Button
+            <NeoGlassButton
               onClick={() => {
                 if (!showPreview) setShowPreview(true);
                 setShowCode(false);
@@ -82,10 +82,10 @@ export default function MainContent() {
               aria-label="Show Preview"
             >
               <Eye className="w-5 h-5" />
-            </Button>
+            </NeoGlassButton>
 
             {/* Code toggle */}
-            <Button
+            <NeoGlassButton
               onClick={() => {
                 if (!showCode) setShowCode(true);
                 setShowPreview(false); // preview yo'q bo'ladi
@@ -94,7 +94,7 @@ export default function MainContent() {
               aria-label="Show Code"
             >
               <Code className="w-5 h-5" />
-            </Button>
+            </NeoGlassButton>
           </div>
 
           {/* Component Preview */}
