@@ -1,0 +1,1 @@
+export const Glass3DCarouselInstall = `npm install react @types/react lucide-react`;
