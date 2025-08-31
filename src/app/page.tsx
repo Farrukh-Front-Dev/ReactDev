@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import GoToMainButton from "@/app/components/GoToMainButton";
+import GoToMainButton from "@/components/GoToMainButton";
 import MainContent from "@/app/Components/page";
 
 export default function HomePage() {
