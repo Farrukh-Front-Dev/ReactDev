@@ -1,0 +1,13 @@
+0 verbose cli /home/rrangesi/.nvm/versions/node/v22.19.0/bin/node /home/rrangesi/.nvm/versions/node/v22.19.0/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.19.0
+3 silly config load:file:/home/rrangesi/.nvm/versions/node/v22.19.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/opt/goinfre/rrangesi/Full Stack developer/Frontend/Component-Library/my-app/.npmrc
+5 error config prefix cannot be changed from project config: /opt/goinfre/rrangesi/Full Stack developer/Frontend/Component-Library/my-app/.npmrc.
+6 silly config load:file:/home/rrangesi/.npmrc
+7 silly config load:file:/home/rrangesi/goinfre/Full Stack developer/Frontend/Component-Library/my-app/.npm-global/etc/npmrc
+8 verbose title npm run dev
+9 verbose argv "run" "dev"
+10 verbose logfile logs-max:10 dir:/home/rrangesi/goinfre/Full Stack developer/Frontend/Component-Library/my-app/.npm/_logs/2025-09-01T15_59_18_944Z-
+11 verbose logfile /home/rrangesi/goinfre/Full Stack developer/Frontend/Component-Library/my-app/.npm/_logs/2025-09-01T15_59_18_944Z-debug-0.log
+12 silly logfile done cleaning log files
